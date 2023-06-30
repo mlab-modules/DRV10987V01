@@ -1,5 +1,5 @@
 # DRV10987V01 BLDC motor controller
-This MLAB module features the [DRV10987](https://www.ti.com/lit/ds/symlink/drv10987.pdf?ts=1618316091180&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FDRV10987) controller by Texas Instruments, designed for sensorless operation of Brushless DC (BLDC) and Permanent Magnet Synchronous Motors (PMSM).
+This MLAB module features the [DRV10987](https://www.ti.com/lit/ds/symlink/drv10987.pdf?ts=1618316091180&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FDRV10987) controller by Texas Instruments, designed for sensorless operation of Brushless DC ([BLDC](https://en.wikipedia.org/wiki/Brushless_DC_electric_motor)) and Permanent Magnet Synchronous Motors ([PMSM](https://en.wikipedia.org/wiki/Synchronous_motor#Permanent-magnet)).
 
 ![](/doc/gen/img/DRV10987V01-bottom.svg) ![](/doc/gen/img/DRV10987V01-top.svg)
 
