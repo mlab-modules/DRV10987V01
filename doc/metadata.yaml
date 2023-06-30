@@ -3,8 +3,17 @@ github_branch: DRV10987V01A
 github_repo: DRV10987V01
 github_url: https://github.com/mlab-modules/DRV10987V01
 homepage: false
-images: []
+images:
+- doc/gen/img/DRV10987V01-bottom.png
+- doc/gen/img/DRV10987V01-top.png
+- doc/gen/DRV10987V01-schematic.svg
+- doc/gen/img/DRV10987V01-bottom.svg
+- doc/gen/img/DRV10987V01-top.svg
+- hw/cam_profi/docs/DRV10987V01A-assembly_page_02.svg
+- hw/cam_profi/docs/DRV10987V01A-assembly_page_01.svg
 mark: 50
+mod_ibom: hw/cam_profi/ibom/DRV10987V01-ibom.html
+mod_scheme: doc/gen/DRV10987V01-schematic.pdf
 tags:
 - bldc
 - bldc-driver
