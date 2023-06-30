@@ -1,7 +1,7 @@
-description: BLDC motor driver module based on TI DRV10985 chip
-github_branch: DRV10985V01A
-github_repo: DRV10985V01
-github_url: https://github.com/mlab-modules/DRV10985V01
+description: BLDC motor driver module based on TI DRV10987 chip
+github_branch: DRV10987V01A
+github_repo: DRV10987V01
+github_url: https://github.com/mlab-modules/DRV10987V01
 homepage: false
 images: []
 mark: 50
@@ -12,4 +12,4 @@ tags:
 - i2c
 - motor-driver
 - sensorless
-title: DRV10985V01
+title: DRV10987V01
