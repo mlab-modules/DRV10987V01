@@ -1,4 +1,4 @@
-description: BLDC motor driver module based on TI DRV10987 chip
+description: MLAB DRV10987V01 sensorless operation driver of BLDC and PMSM motors.
 github_branch: DRV10987V01A
 github_repo: DRV10987V01
 github_url: https://github.com/mlab-modules/DRV10987V01
