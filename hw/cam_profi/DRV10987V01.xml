@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/github/workspace/hw/sch_pcb/DRV10987V01.kicad_sch</source>
+    <date>Fri Jun 30 11:55:31 2023</date>
+    <tool>Eeschema 7.0.5.1-1-g8f565ef7f0-dirty-deb11</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>DRV10975V01A</title>
+        <company>Mlab www.mlab.cz</company>
+        <rev>01A</rev>
+        <date>%d. %m. %Y</date>
+        <source>DRV10987V01.kicad_sch</source>
+        <comment number="1" value="BLDC/PMSM sensorless motor controller "/>
+        <comment number="2" value="roman-dvorak &lt;romandvorak@mlab.cz&gt;"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b53</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b53"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ef2525f2-e849-48d1-8980-5d1e0a465668</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>60985e52-3394-499f-b82c-b833961e9a55</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ea099683-7211-439f-976e-1424c54e25d3</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b50</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b50"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bad0f046-6d7d-4d28-a544-905a5974c3d7</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b50</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b50"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aeaf8094-51a7-4dd4-8e24-0581804da5cb</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b53</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b53"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6edd8206-5b59-4cc1-91e4-06771b4458d3</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b53</field>
+      </fields>
+      <libsource lib="ISM02A-rescue" part="C_Small-Device-ISM02A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b53"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6d2a73e9-4c61-4f64-a858-d2b8a9a4b473</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="ISM02A-rescue" part="C_Small-Device-ISM02A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7fab2e4e-c967-46aa-8b62-a4eb722fba85</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>BZV55C-5,6V</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f88b2</field>
+      </fields>
+      <libsource lib="ISM02A-rescue" part="D_ZENER-MLAB_D" description=""/>
+      <property name="UST_ID" value="5c70984512875079b91f88b2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fd1e3c55-10e7-496c-9431-54c316ba931e</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>DRV10987DPWPR</value>
+      <footprint>Mlab_IO:TSSOP-24_4.4x7.8mm_P0.65mm_PowerPAD</footprint>
+      <fields>
+        <field name="Arrow Part Number">DRV10975PWPR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/drv10975pwpr/texas-instruments?region=nac</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">DRV10987DPWPR</field>
+        <field name="Mouser Part Number">595-DRV10987DPWPR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV10975PWPR?qs=OfeFRKQgECjjJ%252BDg0AsiSg%3D%3D</field>
+        <field name="UST_ID">649ebe2a76c82a1d3b578220</field>
+      </fields>
+      <libsource lib="MLAB_IO" part="DRV10975PWPR" description="12-V, 3-Phase, Sensorless BLDC Motor Controller"/>
+      <property name="Height" value="1.2"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="DRV10987DPWPR"/>
+      <property name="Mouser Part Number" value="595-DRV10987DPWPR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV10975PWPR?qs=OfeFRKQgECjjJ%252BDg0AsiSg%3D%3D"/>
+      <property name="Arrow Part Number" value="DRV10975PWPR"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/drv10975pwpr/texas-instruments?region=nac"/>
+      <property name="UST_ID" value="649ebe2a76c82a1d3b578220"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="12-V, 3-Phase, Sensorless BLDC Motor Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8937ca3e-fe2f-4a45-bbc9-17324c87392e</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>I2C</value>
+      <footprint>Mlab_Pin_Headers:Straight_2x05</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_2x05_PARALLEL" description="2x05 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="2x05 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="ki_keywords" value="2x05, header, connector, pinheader"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cebaca84-a74f-48f1-b64c-3db582245ea8</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>HEADER_2x04_PARALLEL</value>
+      <footprint>Mlab_Pin_Headers:Straight_2x04</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_2x04_PARALLEL" description="2x04 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="2x04 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="ki_keywords" value="2x04, header, connector, pinheader"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2bc8267e-9938-417d-bdd8-3187890ffd4d</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>JUMPER</value>
+      <footprint>Mlab_Pin_Headers:Straight_1x02</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_2x01" description="2x01 2.54 mm pitch header"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="2x01 2.54 mm pitch header"/>
+      <property name="ki_keywords" value="2x01, header, connector, pinheader"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8da2ea5f-eee7-4fa8-919f-d8de072db0ff</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>AUX</value>
+      <footprint>Mlab_Pin_Headers:Straight_2x03</footprint>
+      <libsource lib="header" part="HEADER_2x03_PARALLEL" description="2x03 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="2x03 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="ki_keywords" value="2x03, header, connector, pinheader"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc682688-0813-4f59-ad99-5d8446c1e3cd</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>MOTOR</value>
+      <footprint>Mlab_Pin_Headers:Straight_2x03</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_2x03_PARALLEL" description="2x03 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="2x03 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="ki_keywords" value="2x03, header, connector, pinheader"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe575244-fe13-4198-9542-f94b617b7601</tstamps>
+    </comp>
+    <comp ref="J10">
+      <value>PWR</value>
+      <footprint>Mlab_Pin_Headers:Straight_2x03</footprint>
+      <libsource lib="header" part="HEADER_2x03_PARALLEL" description="2x03 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="2x03 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="ki_keywords" value="2x03, header, connector, pinheader"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000549d65bc</tstamps>
+    </comp>
+    <comp ref="J11">
+      <value>WAGO</value>
+      <footprint>TerminalBlock_WAGO:TerminalBlock_WAGO_236-102_1x02_P5.00mm_45Degree</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_1x02" description="1x02 2.54 mm pitch header"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="1x02 2.54 mm pitch header"/>
+      <property name="ki_keywords" value="1x02, header, connector, pinheader"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>170bc102-bd8d-4da0-8199-9a641eccaeef</tstamps>
+    </comp>
+    <comp ref="J12">
+      <value>WAGO</value>
+      <footprint>TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_1x03" description="1x03 2.54 mm pitch header"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="1x03 2.54 mm pitch header"/>
+      <property name="ki_keywords" value="1x03, header, connector, pinheader"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8c67070e-be0d-4e70-805e-fc70b5e52bc7</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>47uH DE0703-47</value>
+      <footprint>Inductor_SMD:L_Ferrocore_DLG-0703</footprint>
+      <fields>
+        <field name="Manufacturer_Part_Number">DE0703-47</field>
+        <field name="UST_ID">5c70984712875079b91f8b69</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Manufacturer_Part_Number" value="DE0703-47"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b69"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>56e767d8-1d2a-425a-813f-fec0b3de7ca0</tstamps>
+    </comp>
+    <comp ref="M1">
+      <value>HOLE M3</value>
+      <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
+      <libsource lib="mlab-default-rescue" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000549d7549</tstamps>
+    </comp>
+    <comp ref="M2">
+      <value>HOLE M3</value>
+      <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
+      <libsource lib="mlab-default-rescue" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000549d7628</tstamps>
+    </comp>
+    <comp ref="M3">
+      <value>HOLE M3</value>
+      <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
+      <libsource lib="mlab-default-rescue" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000549d7646</tstamps>
+    </comp>
+    <comp ref="M4">
+      <value>HOLE M3</value>
+      <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
+      <libsource lib="mlab-default-rescue" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000549d7665</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>4k7</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8995</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="UST_ID" value="5c70984612875079b91f8995"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4355034-6993-46a1-af2c-2b2e20513fb2</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>4k7</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8995</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="UST_ID" value="5c70984612875079b91f8995"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a69dc08b-099b-4add-9881-acd789105c92</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>4k7</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8995</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="UST_ID" value="5c70984612875079b91f8995"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>217c88e2-f2f8-4106-81a1-0b2941d2e390</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>4k7</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8995</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="UST_ID" value="5c70984612875079b91f8995"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>69964b7e-c1d0-4a81-9534-098043bf782b</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>4k7</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8995</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="UST_ID" value="5c70984612875079b91f8995"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b644d831-5f3b-462b-b9fc-e508fcae2fa6</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ISM02A-rescue" part="C_Small-Device-ISM02A-rescue">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small-Device-ISM02A-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ISM02A-rescue" part="D_ZENER-MLAB_D">
+      <footprints>
+        <fp>D?</fp>
+        <fp>SO*</fp>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_ZENER-MLAB_D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_HEADER" part="HEADER_1x02">
+      <description>1x02 2.54 mm pitch header</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER_1x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_HEADER" part="HEADER_1x03">
+      <description>1x03 2.54 mm pitch header</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER_1x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_HEADER" part="HEADER_2x01">
+      <description>2x01 2.54 mm pitch header</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER_2x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_HEADER" part="HEADER_2x03_PARALLEL">
+      <description>2x03 2.54 mm pitch header, 2 pins next to each other are connected</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER_2x03_PARALLEL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="input"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_HEADER" part="HEADER_2x04_PARALLEL">
+      <description>2x04 2.54 mm pitch header, 2 pins next to each other are connected</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER_2x04_PARALLEL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="input"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="input"/>
+        <pin num="7" name="" type="input"/>
+        <pin num="8" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_HEADER" part="HEADER_2x05_PARALLEL">
+      <description>2x05 2.54 mm pitch header, 2 pins next to each other are connected</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER_2x05_PARALLEL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="input"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="input"/>
+        <pin num="7" name="" type="input"/>
+        <pin num="8" name="" type="input"/>
+        <pin num="9" name="" type="input"/>
+        <pin num="10" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_IO" part="DRV10975PWPR">
+      <description>12-V, 3-Phase, Sensorless BLDC Motor Controller</description>
+      <docs>https://www.ti.com/lit/ds/symlink/drv10975.pdf?ts=1619503349914&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DDRV10975PWPR</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">DRV10975PWPR</field>
+        <field name="Footprint">SOP65P640X120-25N</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/drv10975.pdf?ts=1619503349914&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DDRV10975PWPR</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">DRV10975PWPR</field>
+        <field name="Mouser Part Number">595-DRV10975PWPR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV10975PWPR?qs=OfeFRKQgECjjJ%252BDg0AsiSg%3D%3D</field>
+        <field name="Arrow Part Number">DRV10975PWPR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/drv10975pwpr/texas-instruments?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCP" type="passive"/>
+        <pin num="2" name="CPP" type="passive"/>
+        <pin num="3" name="CPN" type="passive"/>
+        <pin num="4" name="SW" type="passive"/>
+        <pin num="5" name="SWGND" type="passive"/>
+        <pin num="6" name="VREG" type="passive"/>
+        <pin num="7" name="V1P8" type="passive"/>
+        <pin num="8" name="GND_1" type="passive"/>
+        <pin num="9" name="V3P3" type="passive"/>
+        <pin num="10" name="SCL" type="passive"/>
+        <pin num="11" name="SDA" type="passive"/>
+        <pin num="12" name="FG" type="passive"/>
+        <pin num="13" name="SPEED" type="passive"/>
+        <pin num="14" name="DIR" type="passive"/>
+        <pin num="15" name="PGND_1" type="passive"/>
+        <pin num="16" name="PGND_2" type="passive"/>
+        <pin num="17" name="U_1" type="passive"/>
+        <pin num="18" name="U_2" type="passive"/>
+        <pin num="19" name="V_1" type="passive"/>
+        <pin num="20" name="V_2" type="passive"/>
+        <pin num="21" name="W_1" type="passive"/>
+        <pin num="22" name="W_2" type="passive"/>
+        <pin num="23" name="VCC_1" type="passive"/>
+        <pin num="24" name="VCC_2" type="passive"/>
+        <pin num="25" name="GND_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="header" part="HEADER_2x03_PARALLEL">
+      <description>2x03 2.54 mm pitch header, 2 pins next to each other are connected</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER_2x03_PARALLEL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="input"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="mlab-default-rescue" part="HOLE">
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">HOLE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="IC1" pin="6" pinfunction="VREG" pintype="passive"/>
+      <node ref="J10" pin="3" pintype="input"/>
+      <node ref="J10" pin="4" pintype="input"/>
+      <node ref="J4" pin="2" pintype="input"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="2" name="+12V">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="23" pinfunction="VCC_1" pintype="passive"/>
+      <node ref="IC1" pin="24" pinfunction="VCC_2" pintype="passive"/>
+      <node ref="J11" pin="2" pintype="input"/>
+      <node ref="J3" pin="3" pintype="input"/>
+      <node ref="J3" pin="4" pintype="input"/>
+      <node ref="J3" pin="5" pintype="input"/>
+      <node ref="J3" pin="6" pintype="input"/>
+    </net>
+    <net code="3" name="/DIR">
+      <node ref="IC1" pin="14" pinfunction="DIR" pintype="passive"/>
+      <node ref="J5" pin="1" pintype="input"/>
+      <node ref="J5" pin="2" pintype="input"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="4" name="/FG">
+      <node ref="IC1" pin="12" pinfunction="FG" pintype="passive"/>
+      <node ref="J5" pin="5" pintype="input"/>
+      <node ref="J5" pin="6" pintype="input"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="/SCL">
+      <node ref="IC1" pin="10" pinfunction="SCL" pintype="passive"/>
+      <node ref="J2" pin="7" pintype="input"/>
+      <node ref="J2" pin="8" pintype="input"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="6" name="/SDA">
+      <node ref="IC1" pin="11" pinfunction="SDA" pintype="passive"/>
+      <node ref="J2" pin="3" pintype="input"/>
+      <node ref="J2" pin="4" pintype="input"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="7" name="/STEP">
+      <node ref="IC1" pin="13" pinfunction="SPEED" pintype="passive"/>
+      <node ref="J5" pin="3" pintype="input"/>
+      <node ref="J5" pin="4" pintype="input"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="8" name="/U">
+      <node ref="IC1" pin="17" pinfunction="U_1" pintype="passive"/>
+      <node ref="IC1" pin="18" pinfunction="U_2" pintype="passive"/>
+      <node ref="J12" pin="3" pintype="input"/>
+      <node ref="J6" pin="1" pintype="input"/>
+      <node ref="J6" pin="2" pintype="input"/>
+    </net>
+    <net code="9" name="/V">
+      <node ref="IC1" pin="19" pinfunction="V_1" pintype="passive"/>
+      <node ref="IC1" pin="20" pinfunction="V_2" pintype="passive"/>
+      <node ref="J12" pin="2" pintype="input"/>
+      <node ref="J6" pin="3" pintype="input"/>
+      <node ref="J6" pin="4" pintype="input"/>
+    </net>
+    <net code="10" name="/W">
+      <node ref="IC1" pin="21" pinfunction="W_1" pintype="passive"/>
+      <node ref="IC1" pin="22" pinfunction="W_2" pintype="passive"/>
+      <node ref="J12" pin="1" pintype="input"/>
+      <node ref="J6" pin="5" pintype="input"/>
+      <node ref="J6" pin="6" pintype="input"/>
+    </net>
+    <net code="11" name="GND">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="IC1" pin="15" pinfunction="PGND_1" pintype="passive"/>
+      <node ref="IC1" pin="16" pinfunction="PGND_2" pintype="passive"/>
+      <node ref="IC1" pin="25" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC1" pin="5" pinfunction="SWGND" pintype="passive"/>
+      <node ref="IC1" pin="8" pinfunction="GND_1" pintype="passive"/>
+      <node ref="J10" pin="1" pintype="input"/>
+      <node ref="J10" pin="2" pintype="input"/>
+      <node ref="J10" pin="5" pintype="input"/>
+      <node ref="J10" pin="6" pintype="input"/>
+      <node ref="J11" pin="1" pintype="input"/>
+      <node ref="J2" pin="1" pintype="input"/>
+      <node ref="J2" pin="10" pintype="input"/>
+      <node ref="J2" pin="2" pintype="input"/>
+      <node ref="J2" pin="9" pintype="input"/>
+      <node ref="J3" pin="1" pintype="input"/>
+      <node ref="J3" pin="2" pintype="input"/>
+      <node ref="J3" pin="7" pintype="input"/>
+      <node ref="J3" pin="8" pintype="input"/>
+      <node ref="M1" pin="1" pintype="input"/>
+      <node ref="M2" pin="1" pintype="input"/>
+      <node ref="M3" pin="1" pintype="input"/>
+      <node ref="M4" pin="1" pintype="input"/>
+    </net>
+    <net code="12" name="Net-(IC1-CPN)">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="3" pinfunction="CPN" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(IC1-CPP)">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="2" pinfunction="CPP" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(IC1-SW)">
+      <node ref="IC1" pin="4" pinfunction="SW" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(IC1-V1P8)">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="7" pinfunction="V1P8" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(IC1-V3P3)">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="9" pinfunction="V3P3" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(IC1-VCP)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="1" pinfunction="VCP" pintype="passive"/>
+    </net>
+    <net code="18" name="VDD">
+      <node ref="J2" pin="5" pintype="input"/>
+      <node ref="J2" pin="6" pintype="input"/>
+      <node ref="J4" pin="1" pintype="input"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+  </nets>
+</export>
