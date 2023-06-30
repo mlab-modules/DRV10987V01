@@ -1,2 +1,2 @@
-# DRV10985V01
-BLDC motor driver module based on TI DRV10975 chip
+# DRV10987V01
+BLDC motor driver module based on TI DRV10987 chip
