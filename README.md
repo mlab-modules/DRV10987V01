@@ -33,5 +33,9 @@ Our MLAB modules are designed to be as straightforward as possible for integrati
 
 Detailed technical information about the DRV10987 controller can be found in the datasheet, available on the manufacturer's website [here](https://www.ti.com/lit/ds/symlink/drv10987.pdf?ts=1618316091180&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FDRV10987).
 
+### Schematics
+
+[![](/doc/gen/DRV10987V01-schematic.svg)](/doc/gen/DRV10987V01-schematic.pdf)
+
 ### Conclusion
 Regardless of whether you're building a sophisticated robotic system or a simple hobbyist project, this module with the DRV10987 controller from Texas Instruments is a powerful tool for sensorless control of BLDC and PMSM motors.
