@@ -36,7 +36,7 @@ Stackup:
 
 Clearance: 0.2 mm (8 mils)
 
-Track width: 0.3 mm (12 mils)
+Track width: 0.25 mm (10 mils)
 
 - By design rules: 0.2 mm (8 mils)
 
@@ -65,7 +65,7 @@ Eurocircuits class: 6B
 
 Components count: (SMD/THT)
 
-- Top: 16/4 (SMD + THT)
+- Top: 18/4 (SMD + THT)
 - Bottom: 0/8 (THT)
 
 Defined tracks:
@@ -75,9 +75,10 @@ Defined tracks:
 
 Used tracks:
 
+- 0.25 mm (10 mils) (4) defined: no
 - 0.3 mm (12 mils) (60) defined: yes
 - 0.4 mm (16 mils) (8) defined: no
-- 0.5 mm (20 mils) (21) defined: yes
+- 0.5 mm (20 mils) (22) defined: yes
 
 Defined vias:
 

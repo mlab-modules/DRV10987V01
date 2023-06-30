@@ -2,11 +2,11 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/DRV10987V01.kicad_sch</source>
-    <date>Fri Jun 30 11:55:31 2023</date>
+    <date>Fri Jun 30 12:06:11 2023</date>
     <tool>Eeschema 7.0.5.1-1-g8f565ef7f0-dirty-deb11</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>DRV10975V01A</title>
+        <title>DRV10987V01A</title>
         <company>Mlab www.mlab.cz</company>
         <rev>01A</rev>
         <date>%d. %m. %Y</date>
@@ -152,6 +152,17 @@
       <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>fd1e3c55-10e7-496c-9431-54c316ba931e</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>Mlab_D:LED_1206_2</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>438596a6-eed7-4559-8fbd-98ea134b9ff6</tstamps>
     </comp>
     <comp ref="IC1">
       <value>DRV10987DPWPR</value>
@@ -397,6 +408,17 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b644d831-5f3b-462b-b9fc-e508fcae2fa6</tstamps>
     </comp>
+    <comp ref="R6">
+      <value>R_Small</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9715b062-6a27-4290-87d8-5f0c05e5cbe0</tstamps>
+    </comp>
   </components>
   <libparts>
     <libpart lib="Device" part="C_Small">
@@ -432,6 +454,24 @@
       <pins>
         <pin num="1" name="1" type="passive"/>
         <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="R_Small">
@@ -648,6 +688,7 @@
       <node ref="J10" pin="4" pintype="input"/>
       <node ref="J4" pin="2" pintype="input"/>
       <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
     </net>
     <net code="2" name="+12V">
       <node ref="C3" pin="2" pintype="passive"/>
@@ -719,6 +760,7 @@
       <node ref="C7" pin="2" pintype="passive"/>
       <node ref="C8" pin="2" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="IC1" pin="15" pinfunction="PGND_1" pintype="passive"/>
       <node ref="IC1" pin="16" pinfunction="PGND_2" pintype="passive"/>
       <node ref="IC1" pin="25" pinfunction="GND_2" pintype="passive"/>
@@ -742,31 +784,35 @@
       <node ref="M3" pin="1" pintype="input"/>
       <node ref="M4" pin="1" pintype="input"/>
     </net>
-    <net code="12" name="Net-(IC1-CPN)">
+    <net code="12" name="Net-(D2-A)">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(IC1-CPN)">
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="IC1" pin="3" pinfunction="CPN" pintype="passive"/>
     </net>
-    <net code="13" name="Net-(IC1-CPP)">
+    <net code="14" name="Net-(IC1-CPP)">
       <node ref="C2" pin="2" pintype="passive"/>
       <node ref="IC1" pin="2" pinfunction="CPP" pintype="passive"/>
     </net>
-    <net code="14" name="Net-(IC1-SW)">
+    <net code="15" name="Net-(IC1-SW)">
       <node ref="IC1" pin="4" pinfunction="SW" pintype="passive"/>
       <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
     </net>
-    <net code="15" name="Net-(IC1-V1P8)">
+    <net code="16" name="Net-(IC1-V1P8)">
       <node ref="C5" pin="2" pintype="passive"/>
       <node ref="IC1" pin="7" pinfunction="V1P8" pintype="passive"/>
     </net>
-    <net code="16" name="Net-(IC1-V3P3)">
+    <net code="17" name="Net-(IC1-V3P3)">
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="IC1" pin="9" pinfunction="V3P3" pintype="passive"/>
     </net>
-    <net code="17" name="Net-(IC1-VCP)">
+    <net code="18" name="Net-(IC1-VCP)">
       <node ref="C3" pin="1" pintype="passive"/>
       <node ref="IC1" pin="1" pinfunction="VCP" pintype="passive"/>
     </net>
-    <net code="18" name="VDD">
+    <net code="19" name="VDD">
       <node ref="J2" pin="5" pintype="input"/>
       <node ref="J2" pin="6" pintype="input"/>
       <node ref="J4" pin="1" pintype="input"/>
