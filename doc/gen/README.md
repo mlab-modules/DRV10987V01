@@ -65,8 +65,8 @@ Eurocircuits class: 6B
 
 Components count: (SMD/THT)
 
-- Top: 18/4 (SMD + THT)
-- Bottom: 0/8 (THT)
+- Top: 18/0 (SMD)
+- Bottom: 0/12 (THT)
 
 Defined tracks:
 
