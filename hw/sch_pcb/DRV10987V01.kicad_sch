@@ -5,7 +5,7 @@
   (paper "A4")
 
   (title_block
-    (title "DRV10975V01A")
+    (title "DRV10987V01A")
     (date "%d. %m. %Y")
     (rev "01A")
     (company "Mlab www.mlab.cz")
@@ -116,6 +116,89 @@
         )
       )
     )
+    (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "LED" (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "LED diode" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Light emitting diode" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "LED_0_1"
+        (polyline
+          (pts
+            (xy -1.27 -1.27)
+            (xy -1.27 1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 0)
+            (xy 1.27 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy 1.27 1.27)
+            (xy -1.27 0)
+            (xy 1.27 -1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.048 -0.762)
+            (xy -4.572 -2.286)
+            (xy -3.81 -2.286)
+            (xy -4.572 -2.286)
+            (xy -4.572 -1.524)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.778 -0.762)
+            (xy -3.302 -2.286)
+            (xy -2.54 -2.286)
+            (xy -3.302 -2.286)
+            (xy -3.302 -1.524)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "LED_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:R_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "R" (at 0.762 0.508 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -189,6 +272,46 @@
         )
       )
       (symbol "GND_1_1_1"
+        (pin power_in line (at 0 0 270) (length 0) hide
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "GND_2" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -6.35 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "GND_2" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "GND_2_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "GND_2_1_1"
         (pin power_in line (at 0 0 270) (length 0) hide
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -1662,6 +1785,10 @@
     (stroke (width 0) (type default))
     (uuid 300abf31-6273-4e72-933c-3efa457c5ed8)
   )
+  (wire (pts (xy 251.46 81.28) (xy 255.27 81.28))
+    (stroke (width 0) (type default))
+    (uuid 3057f227-01d1-4561-9d95-d9d1bef4749f)
+  )
   (wire (pts (xy 203.2 110.49) (xy 200.66 113.03))
     (stroke (width 0) (type default))
     (uuid 35aba7e3-2cf0-4307-845d-604df66b5594)
@@ -1813,6 +1940,10 @@
   (wire (pts (xy 85.09 90.17) (xy 88.9 90.17))
     (stroke (width 0) (type default))
     (uuid 89bddeab-5a77-42cb-be7e-ae5104380104)
+  )
+  (wire (pts (xy 267.97 81.28) (xy 271.78 81.28))
+    (stroke (width 0) (type default))
+    (uuid 8b7be66c-98cf-4f44-860b-2642b48cf486)
   )
   (wire (pts (xy 246.38 26.67) (xy 246.38 29.21))
     (stroke (width 0) (type solid))
@@ -2126,7 +2257,7 @@
     (pin "5" (uuid 2de1b590-e726-44a2-ad05-63c7a121e6a3))
     (pin "6" (uuid cc351a75-cab6-4cbc-a46a-7ce4d356e181))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "J10") (unit 1)
         )
@@ -2151,7 +2282,7 @@
     )
     (pin "1" (uuid 81617ad2-3e05-4e97-8178-dddb279fd3a9))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "M1") (unit 1)
         )
@@ -2176,7 +2307,7 @@
     )
     (pin "1" (uuid 2113e415-32f5-4dc9-9c35-c69e23c1da1d))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "M2") (unit 1)
         )
@@ -2201,7 +2332,7 @@
     )
     (pin "1" (uuid 4d251f4e-f244-484e-b93f-196cde01147f))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "M3") (unit 1)
         )
@@ -2226,7 +2357,7 @@
     )
     (pin "1" (uuid 3631a353-ef28-46b4-b1a6-dced13eb85ca))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "M4") (unit 1)
         )
@@ -2251,7 +2382,7 @@
     )
     (pin "1" (uuid b7fedf32-b1df-47b6-9af7-dd553ee7e955))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR016") (unit 1)
         )
@@ -2276,7 +2407,7 @@
     )
     (pin "1" (uuid 4bc193c9-7d20-4395-822f-00eb78bf0971))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR017") (unit 1)
         )
@@ -2302,7 +2433,7 @@
     (pin "1" (uuid ab2c6d94-749a-4c71-b4e2-9982c1b37937))
     (pin "2" (uuid 4c7ad3ad-b662-43dd-8d7e-bea85a913122))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "J11") (unit 1)
         )
@@ -2327,9 +2458,34 @@
     )
     (pin "1" (uuid 1d1c280b-d06a-406b-aa82-f8dcd5db5d69))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR019") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_2") (lib_id "power:GND") (at 251.46 81.28 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1c45947d-efa6-46e3-a3cc-48d7a59f80e6)
+    (property "Reference" "#PWR09" (at 251.46 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 251.46 86.36 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 251.46 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 251.46 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 138b9969-9fbb-4db9-813b-fa1a6cd858df))
+    (instances
+      (project "DRV10987V01"
+        (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -2352,7 +2508,7 @@
     )
     (pin "1" (uuid 78c4a971-b34d-43aa-8c23-179ef1ade8d8))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR03") (unit 1)
         )
@@ -2381,7 +2537,7 @@
     (pin "1" (uuid 164868c6-9c66-4d20-9d70-568791b76eb9))
     (pin "2" (uuid f7e9101b-ff46-40cd-836f-b01b8e800d7b))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "R3") (unit 1)
         )
@@ -2406,7 +2562,7 @@
     )
     (pin "1" (uuid 7fc9b14c-63f5-4afc-a058-c6a525c964b7))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR02") (unit 1)
         )
@@ -2431,7 +2587,7 @@
     )
     (pin "1" (uuid c0e39021-0a9e-461a-ab64-5c248b1e17d0))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR020") (unit 1)
         )
@@ -2463,7 +2619,7 @@
     (pin "7" (uuid 2c379152-3ac0-4638-9d55-b9c0cc4f1af2))
     (pin "8" (uuid 7b717a74-9dee-45c9-976b-5709840bcd7f))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "J3") (unit 1)
         )
@@ -2488,9 +2644,35 @@
     )
     (pin "1" (uuid 6f0aa259-5443-4ff8-aa09-7e81b929d7a9))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR018") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:LED") (at 259.08 81.28 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 438596a6-eed7-4559-8fbd-98ea134b9ff6)
+    (property "Reference" "D2" (at 257.4925 74.93 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "LED" (at 257.4925 77.47 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Mlab_D:LED_1206_2" (at 259.08 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 259.08 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 83cf7b88-f06e-4dec-9d5d-b341be558fd8))
+    (pin "2" (uuid a71b0b0e-5b0d-495b-8b70-e71ea69fc930))
+    (instances
+      (project "DRV10987V01"
+        (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -2513,7 +2695,7 @@
     )
     (pin "1" (uuid c525de2b-056c-4b72-a657-7d2c6ec5a38a))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR01") (unit 1)
         )
@@ -2538,7 +2720,7 @@
     )
     (pin "1" (uuid 33fd5ef8-f98e-47ff-bbce-377c73e8c146))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR013") (unit 1)
         )
@@ -2563,7 +2745,7 @@
     )
     (pin "1" (uuid 5fabd288-9bbb-4609-a06c-558efc799d03))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR07") (unit 1)
         )
@@ -2595,7 +2777,7 @@
     (pin "1" (uuid 67db9521-d8ed-4074-9e54-b876a1ce6dc0))
     (pin "2" (uuid ffefb6c0-f69d-457c-a832-190ea2172aa1))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "L1") (unit 1)
         )
@@ -2624,7 +2806,7 @@
     (pin "1" (uuid 121da524-9a99-461b-b515-acdbd7097af5))
     (pin "2" (uuid cccdb699-7de0-41eb-a3c0-b3074360510e))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "C2") (unit 1)
         )
@@ -2653,7 +2835,7 @@
     (pin "1" (uuid 3ec9dbdd-c372-40b9-9354-be86fc8b43a8))
     (pin "2" (uuid 4dedc3ef-c29e-454c-8a47-7f987b5c14da))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "R4") (unit 1)
         )
@@ -2682,7 +2864,7 @@
     (pin "1" (uuid d16b6ba1-6e81-4313-8970-3263a15d9e45))
     (pin "2" (uuid f079db96-eea6-405f-a972-987dfbcc2780))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "C7") (unit 1)
         )
@@ -2711,7 +2893,7 @@
     (pin "1" (uuid 6df8a656-142e-4941-a835-4eb6d8d6fa6d))
     (pin "2" (uuid e8e81374-46cd-406d-8936-0e80f0b9c7e2))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "C6") (unit 1)
         )
@@ -2736,7 +2918,7 @@
     )
     (pin "1" (uuid 39d50983-f628-4f7e-bb08-90515ad2e711))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR010") (unit 1)
         )
@@ -2765,7 +2947,7 @@
     (pin "1" (uuid 4968a3df-63fc-47a8-9df6-48d805dee361))
     (pin "2" (uuid 52e4cc98-59d0-4d52-a677-2170b5d5fb1e))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "C8") (unit 1)
         )
@@ -2838,7 +3020,7 @@
     (pin "8" (uuid 12ac7d14-00b1-4088-8d98-be1461377f6d))
     (pin "9" (uuid cf92bc50-bb1e-416c-bb63-eee1972e6eb8))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "IC1") (unit 1)
         )
@@ -2865,7 +3047,7 @@
     (pin "2" (uuid c72362d6-6437-4808-8530-06cb13043d3a))
     (pin "3" (uuid d7c26265-2a1d-4a3c-b413-b5da9ea4c278))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "J12") (unit 1)
         )
@@ -2891,7 +3073,7 @@
     (pin "1" (uuid 8c2f9874-6877-4c2b-aa5e-1e0aa76a1af4))
     (pin "2" (uuid 88872948-7756-48f8-a7e5-4878cee0056d))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "J4") (unit 1)
         )
@@ -2916,9 +3098,60 @@
     )
     (pin "1" (uuid 158dc6a1-313d-40a2-aa9f-69a4c64c1886))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR012") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small") (at 265.43 81.28 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9715b062-6a27-4290-87d8-5f0c05e5cbe0)
+    (property "Reference" "R6" (at 265.43 76.2 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "R_Small" (at 265.43 78.74 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 265.43 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 265.43 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 39aaa201-d049-44fc-a97c-7b5b72bfbc33))
+    (pin "2" (uuid aca6e735-53e9-495a-b9eb-d962c13a8d45))
+    (instances
+      (project "DRV10987V01"
+        (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
+          (reference "R6") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 271.78 81.28 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9e1bb03c-f140-402b-9985-616a47a52898)
+    (property "Reference" "#PWR022" (at 271.78 85.09 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 271.78 76.2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 271.78 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 271.78 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7819c5b5-5f68-4045-be62-c1670df110d7))
+    (instances
+      (project "DRV10987V01"
+        (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -2945,7 +3178,7 @@
     (pin "1" (uuid 7cde5df7-3136-4b63-b20c-9bf541a6bb70))
     (pin "2" (uuid 9a4f0522-dbf5-454a-afeb-ac4d904eb71b))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "R1") (unit 1)
         )
@@ -2974,7 +3207,7 @@
     (pin "1" (uuid a87f62db-51cf-4e01-9df3-dd0533222631))
     (pin "2" (uuid 0bafde77-72b7-4f9e-b7a0-57d4051780b0))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "R2") (unit 1)
         )
@@ -3003,7 +3236,7 @@
     (pin "1" (uuid 35376c0f-168d-465d-9d83-c6d7ddd4cf59))
     (pin "2" (uuid 6531fa40-3ce9-4345-8c2e-7460f774f559))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "C5") (unit 1)
         )
@@ -3032,7 +3265,7 @@
     (pin "1" (uuid 90b57ecc-5a46-4485-b92e-9308b5e530f8))
     (pin "2" (uuid fc4c2b4c-1470-4d8c-be29-a8a192615709))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "R5") (unit 1)
         )
@@ -3057,7 +3290,7 @@
     )
     (pin "1" (uuid 7acf42a8-e404-4992-bdbc-9a74023fc4e7))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR021") (unit 1)
         )
@@ -3086,7 +3319,7 @@
     (pin "1" (uuid 46cef20a-fa71-4f67-98de-15e230e09741))
     (pin "2" (uuid 6200048c-53c0-49fa-a04e-72b11d0f6474))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "C4") (unit 1)
         )
@@ -3111,7 +3344,7 @@
     )
     (pin "1" (uuid eb701788-de25-47ba-a3a3-39f7d000873b))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR06") (unit 1)
         )
@@ -3141,7 +3374,7 @@
     (pin "5" (uuid f655edff-26be-4832-9cab-42b88313a4a2))
     (pin "6" (uuid f08d4e2b-eac8-45d6-9a66-c48303441692))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "J5") (unit 1)
         )
@@ -3166,7 +3399,7 @@
     )
     (pin "1" (uuid a73f2756-2652-440d-b67b-2f8c983c8510))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR05") (unit 1)
         )
@@ -3191,7 +3424,7 @@
     )
     (pin "1" (uuid ec2f5cd9-9470-4829-9d80-cb3e55ab12ee))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR08") (unit 1)
         )
@@ -3216,7 +3449,7 @@
     )
     (pin "1" (uuid 325549d8-4a87-442b-b742-72177cb5a35c))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR014") (unit 1)
         )
@@ -3241,7 +3474,7 @@
     )
     (pin "1" (uuid 026217bf-c634-4e96-8fd3-60c167467744))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR04") (unit 1)
         )
@@ -3275,7 +3508,7 @@
     (pin "8" (uuid ba8e3e23-5ba0-4747-aa6d-9cd97d4d9e36))
     (pin "9" (uuid ecbadb15-9b98-40ce-bce3-4994c0e037b9))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "J2") (unit 1)
         )
@@ -3300,7 +3533,7 @@
     )
     (pin "1" (uuid 598a1b96-05d6-4cc3-b194-71596c9d3fb1))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR011") (unit 1)
         )
@@ -3329,7 +3562,7 @@
     (pin "1" (uuid 8f3b2827-5a5d-4136-88ca-fb8ef9ecb12b))
     (pin "2" (uuid ebe14736-ce3f-48e7-ad1f-ca37a2ffafa2))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "C3") (unit 1)
         )
@@ -3358,7 +3591,7 @@
     (pin "1" (uuid 51aec474-4d9f-4ded-8878-a3f522df0218))
     (pin "2" (uuid 5c20660e-b341-4aa7-904f-56d6e9adfc1f))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "C1") (unit 1)
         )
@@ -3383,7 +3616,7 @@
     )
     (pin "1" (uuid 7b7a989a-75f6-4d12-bc8c-0c224f8b37a1))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "#PWR015") (unit 1)
         )
@@ -3412,7 +3645,7 @@
     (pin "1" (uuid c144ef61-4339-4be4-a52e-1486397af2cf))
     (pin "2" (uuid 3014f546-2f24-47e7-ac43-0b15b1701806))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "D1") (unit 1)
         )
@@ -3442,7 +3675,7 @@
     (pin "5" (uuid 63ceb986-b9d5-4a0c-b284-0446f156c63f))
     (pin "6" (uuid 8296ffda-ca1f-42e6-98f0-c4f5f59f105b))
     (instances
-      (project "DRV10975V01"
+      (project "DRV10987V01"
         (path "/2ae32537-a16f-4c5b-a56b-c6dddfb8ddb4"
           (reference "J6") (unit 1)
         )
