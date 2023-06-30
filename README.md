@@ -31,6 +31,8 @@ Our MLAB modules are designed to be as straightforward as possible for integrati
 
 ### DRV10987
 
+The DRV10987 from Texas Instruments is a three-phase, sensorless motor driver engineered for brushless DC (BLDC) and Permanent Magnet Synchronous Motors (PMSM). It is designed to handle all necessary functions for the routine operation of brushless motors. Capable of delivering a continuous current of 2A and a peak current of 3A, the DRV10987 can control motor speed based on PWM, analogue, or digital (I2C) input. This versatile chip also features an FG pin for monitoring motor rotation and has an integrated Buck converter at 5V and 100mA for powering peripheral devices. With built-in functions for overload and overheat protection, the DRV10987 represents a robust, compact, and efficient solution for a range of applications that require reliable motor control.
+
 Detailed technical information about the DRV10987 controller can be found in the datasheet, available on the manufacturer's website [here](https://www.ti.com/lit/ds/symlink/drv10987.pdf?ts=1618316091180&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FDRV10987).
 
 ### Schematics
