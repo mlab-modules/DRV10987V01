@@ -44,5 +44,11 @@ Detailed technical information about the DRV10987 controller can be found in the
 
 [![](/doc/gen/DRV10987V01-schematic.svg)](/doc/gen/DRV10987V01-schematic.pdf)
 
+
+## Availability and Pricing
+
+The MLAB module DRV10987V01 with the DRV10987 controller is commercially produced and sold by Universal [Scientific Technologies s.r.o](https://ust.cz/). For information on availability and pricing, please contact the company directly via email at [info@ust.cz](mailto:info@ust.cz). They will be able to provide the most accurate and up-to-date information regarding your purchase inquiries.
+
+
 ### Conclusion
 Regardless of whether you're building a sophisticated robotic system or a simple hobbyist project, this module with the DRV10987 controller from Texas Instruments is a powerful tool for sensorless control of BLDC and PMSM motors.
