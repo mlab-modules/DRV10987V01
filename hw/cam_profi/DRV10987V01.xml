@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/DRV10987V01.kicad_sch</source>
-    <date>Fri Jun 30 19:55:30 2023</date>
+    <date>Tue Jul  4 06:59:23 2023</date>
     <tool>Eeschema 7.0.5.1-1-g8f565ef7f0-dirty-deb11</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -42,8 +42,11 @@
     <comp ref="C2">
       <value>10nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b49</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <property name="UST_ID" value=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b49"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
@@ -151,9 +154,13 @@
       <tstamps>fd1e3c55-10e7-496c-9431-54c316ba931e</tstamps>
     </comp>
     <comp ref="D2">
-      <value>LED</value>
+      <value>GREEN</value>
       <footprint>Mlab_D:LED_1206_2</footprint>
+      <fields>
+        <field name="UST_ID">5c70984412875079b91f8895</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="UST_ID" value="5c70984412875079b91f8895"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
       <property name="ki_description" value="Light emitting diode"/>
@@ -395,9 +402,13 @@
       <tstamps>b644d831-5f3b-462b-b9fc-e508fcae2fa6</tstamps>
     </comp>
     <comp ref="R6">
-      <value>R</value>
+      <value>160R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f897b</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="UST_ID" value="5c70984512875079b91f897b"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -408,7 +419,11 @@
     <comp ref="R7">
       <value>100R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f8977</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="UST_ID" value="5c70984512875079b91f8977"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="DRV10987V01.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
