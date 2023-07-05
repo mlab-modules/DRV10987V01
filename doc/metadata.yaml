@@ -21,4 +21,11 @@ tags:
 - i2c
 - motor-driver
 - sensorless
+- mlab
+- mlab-module
+- kicad
+- kicad-pcb
+- kicad-project
+- mlab-kicad
+- pcb
 title: DRV10987V01
