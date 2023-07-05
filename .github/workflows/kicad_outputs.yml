@@ -116,7 +116,9 @@ jobs:
         if: ${{ success() }}
         with:
           name: doc_xml
-          path: hw/sch_pcb/*.xml
+          path: |
+            hw/sch_pcb/*.xml
+            hw/sch_pcb/*.csv
 
       # Zde se zahazuji debugovaci videa
       - uses: actions/upload-artifact@v3
@@ -286,7 +288,7 @@ jobs:
                 
         cp -r doc_img/* doc/gen/img || true
         cp -r doc_cad/cad/* doc/gen || true
-        mv -r hw_cam_profi/PnP/* hw/cam_profi/PnP || true
+        mv -r hw_cam_profi/PnP hw/cam_profi/PnP || true
         cp -r hw_cam_profi/* hw/cam_profi/gbr || true
         cp -r doc_sch/docs/* doc/gen || true
         cp -r doc_xml/* hw/cam_profi || true
@@ -294,6 +296,8 @@ jobs:
         cp -r doc_placement/doc* hw/cam_profi || true
         cp -r doc_report/* doc/gen || true
         cp -r doc_ibom/docs/* hw/cam_profi/ibom || true
+
+        mv hw/cam_profi/grb/PnP hw/cam_profi/PnP || true
 
         rm -r doc_img || true
         rm -r doc_cad || true
@@ -303,8 +307,6 @@ jobs:
         rm -r doc_xml || true
         rm -r doc_report || true
         rm -r doc_ibom || true
-        
-        tree
         
         git add . -f
         
