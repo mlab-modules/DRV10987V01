@@ -7,8 +7,8 @@ images:
 - doc/gen/img/DRV10987V01-bottom.png
 - doc/gen/img/DRV10987V01-top.png
 - doc/gen/DRV10987V01-schematic.svg
-- doc/gen/img/DRV10987V01-bottom.svg
 - doc/gen/img/DRV10987V01-top.svg
+- doc/gen/img/DRV10987V01-bottom.svg
 - hw/cam_profi/docs/DRV10987V01A-assembly_page_02.svg
 - hw/cam_profi/docs/DRV10987V01A-assembly_page_01.svg
 mark: 50
