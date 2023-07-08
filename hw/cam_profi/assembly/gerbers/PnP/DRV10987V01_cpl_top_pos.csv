@@ -1,0 +1,12 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+"J2","I2C","Straight_2x05",32.4800,9.8063,90.0000,top
+"J3","HEADER_2x04_PARALLEL","Straight_2x04",21.4700,39.3700,0.0000,top
+"J5","AUX","Straight_2x03",17.2600,9.7950,90.0000,top
+"J6","MOTOR","Straight_2x03",25.6950,22.0400,180.0000,top
+"J10","PWR","Straight_2x03",47.5150,17.9700,90.0000,top
+"J11","WAGO","TerminalBlock_WAGO_236-102_1x02_P5.00mm_45Degree",36.6500,35.3500,180.0000,top
+"J12","WAGO","TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree",12.4250,30.5500,-90.0000,top
+"M1","HOLE M3","MountingHole_3mm",48.0400,40.6400,0.0000,top
+"M2","HOLE M3","MountingHole_3mm",7.4000,40.6400,0.0000,top
+"M3","HOLE M3","MountingHole_3mm",48.0400,10.1600,0.0000,top
+"M4","HOLE M3","MountingHole_3mm",7.4000,10.1600,0.0000,top
