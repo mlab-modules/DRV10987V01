@@ -9,10 +9,10 @@ images:
 - doc/gen/DRV10987V01-schematic.svg
 - doc/gen/img/DRV10987V01-top.svg
 - doc/gen/img/DRV10987V01-bottom.svg
-- hw/cam_profi/docs/DRV10987V01A-assembly_page_02.svg
-- hw/cam_profi/docs/DRV10987V01A-assembly_page_01.svg
+- hw/cam_profi/assembly/DRV10987V01-assembly_page_01.svg
+- hw/cam_profi/assembly/DRV10987V01-assembly_page_02.svg
 mark: 50
-mod_ibom: hw/cam_profi/ibom/DRV10987V01-ibom.html
+mod_ibom: hw/cam_profi/DRV10987V01-ibom.html
 mod_scheme: doc/gen/DRV10987V01-schematic.pdf
 tags:
 - bldc
