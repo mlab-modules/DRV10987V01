@@ -107,18 +107,24 @@ jobs:
           board: ${{ env.board }}
           dir: ${{ env.dir }}_docs
           
-      - name: "Rename output"
+#       - name: "Rename output"
+#         run: |
+#           for file in $(find ${{env.dir}} -type f); do sudo mv "${file}" "${file//${{env.project}}/${{env.branch}}}" ; done
+#           for file in $(find ${{env.dir}}_docs -type f); do sudo mv "${file}" "${file//${{env.project}}/${{env.branch}}}" ; done
+
+      - name: "Collect files"
         run: |
-          for file in $(find ${{env.dir}} -type f); do sudo mv "${file}" "${file//${{env.project}}/${{env.branch}}}" ; done
-          for file in $(find ${{env.dir}}_docs -type f); do sudo mv "${file}" "${file//${{env.project}}/${{env.branch}}}" ; done
+          tree
+          mkdir doc_xml || true ;
+          mv hw/sch_pcb/*.xml doc_xml/ || true;
+          mv hw/out_docs/*.csv doc_xml/ || true;
           
       - uses: actions/upload-artifact@v3
         if: ${{ success() }}
         with:
           name: doc_xml
           path: |
-            hw/sch_pcb/*.xml
-            hw/sch_pcb/*.csv
+            doc_xml
 
       # Zde se zahazuji debugovaci videa
       - uses: actions/upload-artifact@v3
@@ -283,21 +289,21 @@ jobs:
         mkdir hw || true
         mkdir hw/cam_profi || true
         mkdir hw/cam_profi/gbr || true
-        mkdir hw/cam_profi/PnP || true
+        mkdir hw/cam_profi/assembly || true
         mkdir hw/cam_profi/ibom || true
                 
         cp -r doc_img/* doc/gen/img || true
         cp -r doc_cad/cad/* doc/gen || true
-        mv -r hw_cam_profi/PnP hw/cam_profi/PnP || true
         cp -r hw_cam_profi/* hw/cam_profi/gbr || true
         cp -r doc_sch/docs/* doc/gen || true
         cp -r doc_xml/* hw/cam_profi || true
         cp -r doc_sch/img/pcb/* doc/gen/img || true
-        cp -r doc_placement/doc* hw/cam_profi || true
+        mv -r doc_placement/PnP/* hw/cam_profi/assembly || true
+        cp -r doc_placement/* hw/cam_profi/assembly || true
         cp -r doc_report/* doc/gen || true
-        cp -r doc_ibom/docs/* hw/cam_profi/ibom || true
+        cp -r doc_ibom/docs/* hw/cam_profi || true
 
-        mv hw/cam_profi/grb/PnP hw/cam_profi/PnP || true
+        mv hw/cam_profi/gbr/PnP/ hw/cam_profi/assembly || true
 
         rm -r doc_img || true
         rm -r doc_cad || true
