@@ -12,13 +12,8 @@ def write(reg, d, debug = True):
     bus.write_i2c_block_data(addr, reg, [d>>8, d&0xff])
     #bus.write_i2c_block_data(addr, reg, [d&0xff, d>>8])
     if debug:
-        print(".......")
-        print(bin(d), bin(d>>8), bin(d&0xff))
-        print(bin(d))
+        #print(bin(d), bin(d>>8), bin(d&0xff))
         print("Write: 0x{0:02x}: 0b{0:016b}".format(reg, d))
-        print("0b{0:08b}, 0b{0:08b}".format(d>>8, d&0xff))
-
-        print('0b{0:016b}'.format(d ))
 
 def read(reg):
     a = bus.read_i2c_block_data(addr, reg, 2)
