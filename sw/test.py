@@ -80,15 +80,15 @@ time.sleep(0.1)
 c = 0
 c |= 0b0111011
 c |= 0b0 << 7
-c |= 0b00001000 << 8   # Ktvalue
+c |= 0b00011000 << 8   # Ktvalue
 write(0x91, c)
 #write(0x91, 0b10111100111011)
 time.sleep(0.1)
 
 c = 0
-c |= 0b111
-c |= 0b100 << 3
-c |= 0b10 << 6
+c |= 0b111          # breaking mode
+c |= 0b111 << 3     # Ramp-up
+c |= 0b11 << 6
 c |= 0b00 << 8
 c |= 0b0 << 10 # Reverse
 # ... 
@@ -104,7 +104,7 @@ write(0x93, c)
 time.sleep(0.1)
 
 c = 0
-c |= 0b1
+c |= 0b0
 c |= 0b000 << 1 # HW current limit
 c |= 0b001 << 4 # SW limit
 c |= 0b100000 << 8
@@ -119,7 +119,7 @@ c |= 0b00 << 2
 c |= 0b001 << 4
 c |= 0b1 << 7 
 c |= 0b1 << 8 # no break
-# ....
+c |= 0b111 << 9
 c |= 0b11 << 12 # Kt thr
 write(0x95, c)
 #write(0x95, 0b11110001000011)
@@ -128,8 +128,8 @@ time.sleep(0.1)
 
 c = 0
 c |= 0b1010     # Driver dead time
-c |= 0b10 << 5  # SCORE control
-c |= 0b01 << 8
+c |= 0b00 << 5  # SCORE control
+c |= 0b00 << 8
 c |= 0b0010 << 10 # IPD current
 c |= 0b01 << 14
 write(0x96, c)
@@ -141,7 +141,10 @@ time.sleep(0.1)
 
 # Nastav rychlost, 
 write(0x60, 0b0000000000000000) # Zapni motor
-write(0x30, 0b1000000000000000 | 50)
+write(0x30, 0b1000000000000000 | 0b1000)
+
+
+write(0x30, 0b1000000000000000 | 0b10000)
 
 last_status = 0
 
@@ -162,8 +165,13 @@ while(1):
 
 
     
+    d = read(0x01)/10
+    print('speed {} Hz'.format(d))
+
+
+    
     d = read(0x06)
-    print('speed 0b{0:016b}'.format(d ))
+    print('Spd BUFF 0b{0:08b}, CMD: 0b{0:08b}'.format(d&0xff, d>>8))
 
 
 
@@ -173,7 +181,17 @@ while(1):
     d = read(0x04)&0b11111111111
     if d>=1023:
         d -= 1023
-    print('Curr {}A'.format( d/512.0 ))
+    d /= 512.0
+    print('Curr {}A'.format( d ))
+
+    # if d > 0.8:
+    #     print("RESTART..")
+    #     write(0x60, 0b1000000000000000) # Zapni motor
+    #     time.sleep(0.5)
+    #     write(0x60, 0b0000000000000000) # Zapni motor
+    #     time.sleep(5)
+
+
 
     d = read(0x03)/2/1090
     print('Kt {} v/Hz'.format( d ))
