@@ -28,7 +28,7 @@ def read(reg):
 
 
 
-#write(0x35, 0b0001000000000000) # shadowed
+write(0x35, 0b0001000000000000) # shadowed
 write(0x60, 0b0000000000000000) 
 
 
