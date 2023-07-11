@@ -31,6 +31,7 @@ void writeTwoBytes(uint8_t reg, uint8_t data1, uint8_t data2) {
   Wire.write(data1);   // První byte dat
   Wire.write(data2);   // Druhý byte dat
   Wire.endTransmission();
+  delay(100);
 }
 
 // Funkce pro čtení dvou bytů z registru I2C zařízení
@@ -63,20 +64,20 @@ uint16_t read_twoByte(int address, unsigned char r){
 }
 
 void write_twoByte(int address, unsigned char r, uint16_t data){
-  uint16_t begin = 0;
-  begin = read_twoByte(address, r);
-  delay(1);
+  // uint16_t begin = 0;
+  // begin = read_twoByte(address, r);
+  delay(100);
 
   Wire.beginTransmission(address);
   Wire.write(r);
-  Wire.write((data >> 8) & 0xFF); // LSB
+  Wire.write((data >> 8));
   Wire.write(data & 0xFF);
   Wire.endTransmission(true);
   
-  delay(1);
-  uint16_t end = 0;
-  end = read_twoByte(address, r);
-  Serial.printf("reg 0x%04X: 0x%04X -> 0x%04X -> 0x%04X \r\n", r, begin, data, end);
+  // delay(100);
+  // uint16_t end = 0;
+  // end = read_twoByte(address, r);
+  // Serial.printf("reg 0x%04X: 0x%04X -> 0x%04X -> 0x%04X \r\n", r, begin, data, end);
 }
 
   uint16_t i = 0;
@@ -94,105 +95,125 @@ void setup() {
   Serial.println("Hello!");
 
 
-  Serial.println("EEPROM PROG");
-  write_twoByte(ADDR_DRV, 0x35, 0b0001000000000000);    // EEPROM SHADOW
+  // Serial.println("EEPROM PROG");
+  // write_twoByte(ADDR_DRV, 0x35, 0b0001000000000000);    // EEPROM SHADOW
 
 
-  Serial.println(".......");
+  // Serial.println(".......");
 
 
-  uint16_t CFG1 = 0;
+//   uint16_t CFG1 = 0;
 
-  CFG1 |= 0b0111010; // RMShift, RMValue - Motor phase resistance 0.8 Ohm
-  CFG1 |= 0b1 << 7; // Half-cycle adjust
-  CFG1 |= 7 << 8;  // Pocet polu motoru
-  CFG1 |= 0b00 << 12; // FG open-loop select
-  CFG1 |= 0b11 << 14; // Spead spctrum modulation control
+//   CFG1 |= 0b0111010; // RMShift, RMValue - Motor phase resistance 0.8 Ohm
+//   CFG1 |= 0b1 << 7; // Half-cycle adjust
+//   CFG1 |= 7 << 8;  // Pocet polu motoru
+//   CFG1 |= 0b00 << 12; // FG open-loop select
+//   CFG1 |= 0b11 << 14; // Spead spctrum modulation control
   
-  write_twoByte(ADDR_DRV, 0x90, CFG1);
+//   write_twoByte(ADDR_DRV, 0x90, CFG1);
 
 
 
-  uint16_t CFG2 = 0;
-  CFG2 |= 0x6c; // 4, comutation advance value
-  CFG2 |= 0b0 << 7; // Commutation advance mode
-  CFG2 |= 0b0011000 << 8; // Kt value 
-  write_twoByte(ADDR_DRV, 0x91, CFG2);
+//   uint16_t CFG2 = 0;
+//   CFG2 |= 0x6c; // 4, comutation advance value
+//   CFG2 |= 0b0 << 7; // Commutation advance mode
+//   CFG2 |= 0b0011000 << 8; // Kt value 
+//   write_twoByte(ADDR_DRV, 0x91, CFG2);
 
 
-  uint16_t CFG3 = 0;
-  CFG3 |= 0b000; // Braking mode
-  CFG3 |= 0b000 << 3; // Open-loop rampup
-  CFG3 |= 0b10 << 6; // Open-loop current
-  CFG3 |= 0b00 << 8;
-  CFG3 |= 0b0 << 10;
-  CFG3 |= 0b0 << 11;
-  CFG3 |= 0b1 << 12; // Hysteresis for BEMF
-  write_twoByte(ADDR_DRV, 0x92, CFG3);
+//   uint16_t CFG3 = 0;
+//   CFG3 |= 0b000; // Braking mode
+//   CFG3 |= 0b000 << 3; // Open-loop rampup
+//   CFG3 |= 0b10 << 6; // Open-loop current
+//   CFG3 |= 0b00 << 8;
+//   CFG3 |= 0b0 << 10;
+//   CFG3 |= 0b0 << 11;
+//   CFG3 |= 0b1 << 12; // Hysteresis for BEMF
+//   write_twoByte(ADDR_DRV, 0x92, CFG3);
 
 
-  uint16_t CFG4 = 0;
-  CFG4 |= 0b111; // algin time
-  CFG4 |= 0b11111 << 3; // Open to close loop
-  CFG4 |= 0b011 << 8;
-  CFG4 |= 0b0 << 11;
-  CFG4 |= 1 << 14; //  Accel range selection
-  write_twoByte(ADDR_DRV, 0x93, CFG4);
+//   uint16_t CFG4 = 0;
+//   CFG4 |= 0b111; // algin time
+//   CFG4 |= 0b11111 << 3; // Open to close loop
+//   CFG4 |= 0b011 << 8;
+//   CFG4 |= 0b0 << 11;
+//   CFG4 |= 1 << 14; //  Accel range selection
+//   write_twoByte(ADDR_DRV, 0x93, CFG4);
 
 
-  uint16_t CFG5 = 0;
-  CFG5 |= 0b1;
-  CFG5 |= 0b000 << 1;  // HW current limit 
-  CFG5 |= 0b010 << 4;   // SW current limit
-  CFG5 |= 0b000000 << 8; // Lock5 - LOCK0
-  CFG5 |= 0b01 << 14; // Limit current when overtemp
-  write_twoByte(ADDR_DRV, 0x94, CFG5);
+//   uint16_t CFG5 = 0;
+//   CFG5 |= 0b1;
+//   CFG5 |= 0b000 << 1;  // HW current limit 
+//   CFG5 |= 0b010 << 4;   // SW current limit
+//   CFG5 |= 0b000000 << 8; // Lock5 - LOCK0
+//   CFG5 |= 0b01 << 14; // Limit current when overtemp
+//   write_twoByte(ADDR_DRV, 0x94, CFG5);
 
 
-  uint16_t CFG6 = 0;
-  CFG6 |= 0b10;
-  CFG6 |= 0b11 << 2;
-  CFG6 |= 0b100 << 4;
-  CFG6 |= 0b1 << 7; // Transfer to Open-loop
-  CFG6 |= 0b1 << 8; // Hi-z
-  CFG6 |= 0b11 << 12; // KT detect threshold
-  write_twoByte(ADDR_DRV, 0x95, CFG6);
+//   uint16_t CFG6 = 0;
+//   CFG6 |= 0b10;
+//   CFG6 |= 0b11 << 2;
+//   CFG6 |= 0b100 << 4;
+//   CFG6 |= 0b1 << 7; // Transfer to Open-loop
+//   CFG6 |= 0b1 << 8; // Hi-z
+//   CFG6 |= 0b11 << 12; // KT detect threshold
+//   write_twoByte(ADDR_DRV, 0x95, CFG6);
 
-  //write_twoByte(ADDR_DRV, 0x92, 0b1010000);
-  //write_twoByte(ADDR_DRV, 0x92, 0b0000000100000000);
+//   //write_twoByte(ADDR_DRV, 0x92, 0b1010000);
+//   //write_twoByte(ADDR_DRV, 0x92, 0b0000000100000000);
 
-  //write_twoByte(ADDR_DRV, 0x93, 0b1101110001010);
-  //write_twoByte(ADDR_DRV, 0x93, 0b000000100001011);
+//   //write_twoByte(ADDR_DRV, 0x93, 0b1101110001010);
+//   //write_twoByte(ADDR_DRV, 0x93, 0b000000100001011);
 
- // write_twoByte(ADDR_DRV, 0x94, 0b11111110101111);
-  //write_twoByte(ADDR_DRV, 0x94, 0b000000000000110);
+//  // write_twoByte(ADDR_DRV, 0x94, 0b11111110101111);
+//   //write_twoByte(ADDR_DRV, 0x94, 0b000000000000110);
 
-  //write_twoByte(ADDR_DRV, 0x95, 0b11000101110111);
-  //write_twoByte(ADDR_DRV, 0x95, 0b11110101000011);
+//   //write_twoByte(ADDR_DRV, 0x95, 0b11000101110111);
+//   //write_twoByte(ADDR_DRV, 0x95, 0b11110101000011);
 
-  write_twoByte(ADDR_DRV, 0x96, 0b101101010);
-  //write_twoByte(ADDR_DRV, 0x96, 0b101100010);
+//   write_twoByte(ADDR_DRV, 0x96, 0b101101010);
+//   //write_twoByte(ADDR_DRV, 0x96, 0b101100010);
   
 
 
 
-  Serial.println("......................");
+//   Serial.println("......................");
 
-  //Serial.println("CONFIG1");
-  //write_twoByte(ADDR_DRV, 0x90, 0x003A);
+//   //Serial.println("CONFIG1");
+//   //write_twoByte(ADDR_DRV, 0x90, 0x003A);
 
-  Serial.println("IPDPos, VoltageSupply");
-  write_twoByte(ADDR_DRV, 0x05, 0x0067);  // 0x0067 - 12V
-
-
-  Serial.println("Current");
-  //write_twoByte(ADDR_DRV, 0x04, 0x015);
-  delay(100);
+//   Serial.println("IPDPos, VoltageSupply");
+//   write_twoByte(ADDR_DRV, 0x05, 0x0067);  // 0x0067 - 12V
 
 
+//   Serial.println("Current");
+//   //write_twoByte(ADDR_DRV, 0x04, 0x015);
+//   delay(100);
 
-  Serial.println("SPEED");
-  write_twoByte(ADDR_DRV, 0x30, 0x8003);
+
+
+//   Serial.println("SPEED");
+//   write_twoByte(ADDR_DRV, 0x30, 0x8003);
+
+
+write_twoByte(ADDR_DRV, 0x35, 0x1000); // Write 0b0001000000000000 (0x1000) to 0x35 arduino
+write_twoByte(ADDR_DRV, 0x60, 0x8000); // Write 0b1000000000000000 (0x8000) to 0x60 arduino
+write_twoByte(ADDR_DRV, 0x20, 0x3851); // Write 0b0011100001010001 (0x3851) to 0x20 arduino
+write_twoByte(ADDR_DRV, 0x21, 0x2d2d); // Write 0b0010110100101101 (0x2d2d) to 0x21 arduino
+write_twoByte(ADDR_DRV, 0x90, 0xc7bb); // Write 0b1100011110111011 (0xc7bb) to 0x90 arduino
+write_twoByte(ADDR_DRV, 0x91, 0x183b); // Write 0b0001100000111011 (0x183b) to 0x91 arduino
+write_twoByte(ADDR_DRV, 0x92, 0xff); // Write 0b0000000011111111 (0x00ff) to 0x92 arduino
+write_twoByte(ADDR_DRV, 0x93, 0x58ff); // Write 0b0101100011111111 (0x58ff) to 0x93 arduino
+write_twoByte(ADDR_DRV, 0x94, 0x6010); // Write 0b0110000000010000 (0x6010) to 0x94 arduino
+write_twoByte(ADDR_DRV, 0x95, 0x3f93); // Write 0b0011111110010011 (0x3f93) to 0x95 arduino
+write_twoByte(ADDR_DRV, 0x96, 0x480a); // Write 0b0100100000001010 (0x480a) to 0x96 arduino
+write_twoByte(ADDR_DRV, 0x60, 0x0); // Write 0b0000000000000000 (0x0000) to 0x60 arduino
+write_twoByte(ADDR_DRV, 0x30, 0x8008); // Write 0b1000000000001000 (0x8008) to 0x30 arduino
+//write_twoByte(ADDR_DRV, 0x30, 0x8010); // Write 0b1000000000010000 (0x8010) to 0x30 arduino
+write_twoByte(ADDR_DRV, 0x00, 0xffff); // Write 0b1111111111111111 (0xffff) to 0x00 arduino
+
+
+
 }
 
 // the loop routine runs over and over again forever:
@@ -226,7 +247,7 @@ void loop() {
 
   Serial.println(read_twoByte(ADDR_DRV, 0x06), HEX);
 
-    write_twoByte(ADDR_DRV, 0x30, 0x8001);
+  //  write_twoByte(ADDR_DRV, 0x30, 0x8001);
 
 
   //write_twoByte(ADDR_DRV, 0x35, 0b0001000000000000);    // EEPROM SHADOW
