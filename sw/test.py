@@ -24,7 +24,7 @@ def read(reg):
 
 
 write(0x35, 0b0001000000000000) # shadowed
-write(0x60, 0b0000000000000000) 
+write(0x60, 0b1000000000000000) 
 
 
 print("0b{0:016b}".format(read(0x35)))
@@ -80,7 +80,7 @@ time.sleep(0.1)
 c = 0
 c |= 0b0111011
 c |= 0b0 << 7
-c |= 0b00000010 << 8   # Ktvalue
+c |= 0b00001000 << 8   # Ktvalue
 write(0x91, c)
 #write(0x91, 0b10111100111011)
 time.sleep(0.1)
@@ -113,18 +113,35 @@ write(0x94, c)
 time.sleep(0.1)
 
 
-write(0x95, 0x3c43)
+c = 0
+c |= 0b0011
+c |= 0b00 << 2
+c |= 0b001 << 4
+c |= 0b1 << 7 
+c |= 0b1 << 8 # no break
+# ....
+c |= 0b11 << 12 # Kt thr
+write(0x95, c)
+#write(0x95, 0b11110001000011)
 time.sleep(0.1)
 
-write(0x96, 0x016a)
+
+c = 0
+c |= 0b1010     # Driver dead time
+c |= 0b10 << 5  # SCORE control
+c |= 0b01 << 8
+c |= 0b0010 << 10 # IPD current
+c |= 0b01 << 14
+write(0x96, c)
+#write(0x96, 0b101101010)
 time.sleep(0.1)
 
 #write(0x30, 0b1000000000000000 | 0b1000)
 
 
-
 # Nastav rychlost, 
-write(0x30, 0b1000000000000000 | 100)
+write(0x60, 0b0000000000000000) # Zapni motor
+write(0x30, 0b1000000000000000 | 50)
 
 last_status = 0
 
@@ -158,6 +175,9 @@ while(1):
         d -= 1023
     print('Curr {}A'.format( d/512.0 ))
 
-
     d = read(0x03)/2/1090
     print('Kt {} v/Hz'.format( d ))
+
+
+    d = read(0x30)
+    print('SPDste 0b{0:016b}'.format( d ))
