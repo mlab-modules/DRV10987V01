@@ -2,7 +2,8 @@ description: MLAB DRV10987V01 sensorless operation driver of BLDC and PMSM motor
 github_branch: DRV10987V01A
 github_repo: DRV10987V01
 github_url: https://github.com/mlab-modules/DRV10987V01
-homepage: false
+homepage: true
+image_title: /doc/gen/img/DRV10987V01-top.png
 images:
 - doc/gen/img/DRV10987V01-bottom.png
 - doc/gen/img/DRV10987V01-top.png
@@ -11,7 +12,7 @@ images:
 - doc/gen/img/DRV10987V01-bottom.svg
 - hw/cam_profi/assembly/DRV10987V01-assembly_page_01.svg
 - hw/cam_profi/assembly/DRV10987V01-assembly_page_02.svg
-mark: 50
+mark: 80
 mod_ibom: hw/cam_profi/DRV10987V01-ibom.html
 mod_scheme: doc/gen/DRV10987V01-schematic.pdf
 tags:
