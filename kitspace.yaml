@@ -5,4 +5,5 @@ eda:
   type: kicad
 gerbers: hw/cam_profi/
 site: https://github.com/mlab-modules/DRV10987V01
-summary: MLAB DRV10987V01 sensorless operation driver of BLDC and PMSM motors.
+summary: MLAB DRV10987V01 sensorless operation driver of BLDC and PMSM motors based
+  on DRV10987 controller from TexasInstruments.
