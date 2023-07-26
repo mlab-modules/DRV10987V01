@@ -1,0 +1,34 @@
+name: Upload Python Package
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        cd sw/python
+        python -m pip install --upgrade pip
+        pip install build
+    - name: Build package
+      run: |
+        cd sw/python
+        python3 setup.py build sdist
+    - name: Publish package
+      uses: pypa/gh-action-pypi-publish@v1.8.8
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}
+        skip_existing: true
+        verbose: true
+        packages-dir: sw/python/dist
