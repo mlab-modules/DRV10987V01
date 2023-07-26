@@ -22,11 +22,11 @@ setup(
     license=license,
     packages=find_packages(),
     install_requires=install_requires,
-    classifiers=[
-        "Development Status :: 4 - Beta",
-        "Intended Audience :: Developers,Science/Research",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-        "Programming Language :: Python::3",
-        "Topic :: Software Development :: Libraries :: Python Modules",    ],
+    # classifiers=[
+    #     "Development Status :: 4 - Beta",
+    #     "Intended Audience :: Developers,Science/Research",
+    #     "License :: OSI Approved :: MIT License",
+    #     "Operating System :: OS Independent",
+    #     "Programming Language :: Python::3",
+    # ]
 )
