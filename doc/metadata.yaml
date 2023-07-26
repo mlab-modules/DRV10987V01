@@ -6,6 +6,10 @@ github_url: https://github.com/mlab-modules/DRV10987V01
 homepage: true
 image_title: /doc/gen/img/DRV10987V01-top.png
 images:
+- tools/measurements/df45l024053-a2_slow.png
+- tools/measurements/df45l024053-a2_fast.png
+- tools/measurements/df45m024053-a2_slow.png
+- tools/measurements/df45m024053-a2_fast.png
 - doc/gen/img/DRV10987V01-bottom.png
 - doc/gen/img/DRV10987V01-top.png
 - doc/gen/DRV10987V01-schematic.svg
@@ -32,4 +36,4 @@ tags:
 - pcb
 - drv10987
 title: DRV10987V01
-updated: '2023-07-21T03:41:25.784784+00:00'
+updated: '2023-07-26T00:46:49.298458+00:00'
