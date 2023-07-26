@@ -27,9 +27,9 @@ jobs:
       run: |
         cd sw/python
         python3 setup.py egg_info -b ".dev`date '+%Y%m%d%H%M'`" build sdist
-    - name: Deploy Pypi
-      uses: remorses/pypi@v3
+    - name: Publish package
+      uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
-        setup_file: sw/python/setup.py
-        username: __token__
+        user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
+        skip_existing: true
