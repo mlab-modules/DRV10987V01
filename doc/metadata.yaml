@@ -20,6 +20,7 @@ images:
 mark: 80
 mod_ibom: hw/cam_profi/DRV10987V01-ibom.html
 mod_scheme: doc/gen/DRV10987V01-schematic.pdf
+status: 0
 tags:
 - bldc
 - bldc-driver
